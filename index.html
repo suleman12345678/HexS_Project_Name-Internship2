@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paws & Hope — Animal Charity</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <!-- Header -->
+  <nav id="navbar">
+    <div id="logo">
+      <a href="#home">🐾 Paws & Hope</a>
+    </div>
+    <div id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#mission">Mission</a>
+      <a href="#programs">Programs</a>
+      <a href="#donate">Donate</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div id="home-text">
+      <h1 id="home-title">Together, We Save Lives 🐶🐱</h1>
+      <p id="home-sub">
+        Paws & Hope rescues, heals, and rehomes animals in need.  
+        Join us in building a compassionate world.
+      </p>
+      <a href="#donate" id="home-donate" class="btn btn-primary">Donate Now</a>
+    </div>
+    <div id="home-img">
+      <img src="dog.png" alt="Happy dog" />
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission">
+    <div class="mission-container">
+      <div class="mission-image">
+        <img src="dog 1.png" alt="Our Mission">
+      </div>
+      <div class="mission-text">
+        <h2>Our Mission</h2>
+        <p>
+          At AnimalCare, our mission is to protect, rescue, and provide shelter to
+          vulnerable animals. We work tirelessly to spread awareness, support
+          adoption programs, and create a safe environment where every animal can
+          live with love and dignity.
+        </p>
+        <p>
+          Together, with your support, we can give animals a better tomorrow.
+        </p>
+        <!-- Learn More button that scrolls to Programs -->
+        <button class="btn btn-primary" id="learnMore">Learn More</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Programs Section -->
+  <section id="programs">
+    <h2 id="programs-title">Our Programs</h2>
+    <div class="grid programs">
+      <div class="card" id="program1">
+        <img src="rescue.png" alt="Rescue" />
+        <h3>Emergency Rescue</h3>
+        <p>24/7 response team for injured and distressed animals.</p>
+      </div>
+      <div class="card" id="program2">
+        <img src="clinic.png" alt="Clinic" />
+        <h3>Community Clinics</h3>
+        <p>Free vaccinations and sterilization to control population.</p>
+      </div>
+      <div class="card" id="program3">
+        <img src="adoptation.png" alt="Adoption" />
+        <h3>Adoption & Foster</h3>
+        <p>Finding safe and loving homes for rescued animals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate">
+    <h2 id="donate-title">Make a Difference</h2>
+    <p id="donate-desc">Every contribution brings hope to an innocent life ❤️</p>
+    <button class="btn btn-primary" id="donate-500">Donate ₹500</button>
+    <button class="btn btn-primary" id="donate-1000">Donate ₹1000</button>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2 id="video-title">Watch Our Story</h2>
+    <video id="video-file" controls>
+      <source src="dog video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 id="contact-title">Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="contact-name" placeholder="Your Name" required />
+      <input type="email" id="contact-email" placeholder="Your Email" required />
+      <textarea id="contact-msg" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-primary" id="contact-submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p id="footer-text">© <span id="year"></span> Paws & Hope | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

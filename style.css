@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+/* Navbar container */
+/* Navbar */
+#navbar {
+  position: fixed;         /* stays on top when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0b0f1a;     /* dark background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  z-index: 1000;           /* keeps it above all other sections */
+}
+
+/* Logo styling */
+#logo a {
+  text-decoration: none;   /* removes underline */
+  color: white;            /* makes it white */
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect for logo */
+#logo a:hover {
+  color: #ffcc00;          /* golden hover effect */
+}
+
+/* Navbar links */
+#nav-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#nav-links a:hover {
+  color: #ffcc00;          /* same hover color */
+}
+
+/* Add top padding to sections so content isn't hidden under fixed nav */
+section {
+  padding: 6rem 2rem 2rem; /* pushes content down */
+}
+
+
+
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 60px 5%;
+  gap: 20px;
+}
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background: #16a34a;
+}
+
+/* Sections */
+section {
+  padding: 60px 5%;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Programs */
+.programs {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Donate */
+#donate {
+  text-align: center;
+}
+#donate button {
+  margin: 10px;
+}
+
+/* Video */
+#video {
+  text-align: center;
+}
+#video video {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+#contactForm {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#contactForm input,
+#contactForm textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Mission Section */
+    #mission {
+      padding: 60px 5%;
+      background: #fff;
+    }
+
+    .mission-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* image left, text right */
+      align-items: center;
+      gap: 40px;
+    }
+
+    .mission-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .mission-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0d1321;
+      text-align: left; /* aligned left for balance */
+    }
+
+    .mission-text p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .mission-text .btn {
+      margin-top: 10px;
+    }
+
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+}
